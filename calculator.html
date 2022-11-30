@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+
+    <title>calculator</title>
+    <style>
+      *{
+        box-sizing: border-box;
+        /* -webkit-box-sizing: border-box; */
+        /* -moz-box-sizing: border-box; */
+      }
+      body{
+        background-color: #555;
+        margin-top:100px;
+      }
+      h1{
+        color:#fff;
+        padding-left: 50px;
+        
+      }
+      .wrap{
+        width: 300px;
+        margin:auto;
+        height:auto;
+        padding: 20px;
+        background-color: rgb(39, 37, 37);
+      }
+      input[type=text]{
+        padding:10px;
+        width:100%;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: bold;
+       
+      }
+      input[type=button]{
+        width:60px;
+        padding:5px;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+      <h1>Calculator</h1>
+      <form name="calc">
+        <input type="text" id="display">
+        <br><br>
+        <input type="button" value="7" onclick="displayValue('7')">
+        <input type="button" value="8" onclick="displayValue('8')">
+        <input type="button" value="9" onclick="displayValue('9')">
+        <input type="button" value="*" onclick="displayValue('*')">
+        <br><br>
+        <input type="button" value="4" onclick="displayValue('4')">
+        <input type="button" value="5" onclick="displayValue('5')">
+        <input type="button" value="6" onclick="displayValue('6')">
+        <input type="button" value="-" onclick="displayValue('-')">
+        <br><br>
+        <input type="button" value="1" onclick="displayValue('1')">
+        <input type="button" value="2" onclick="displayValue('2')">
+        <input type="button" value="3" onclick="displayValue('3')">
+        <input type="button" value="+" onclick="displayValue('+')">
+        <br><br>
+        <input type="button" value="AC" onclick="allClear()">
+        <input type="button" value="0" onclick="displayValue('0')">
+        <input type="button" value="/" onclick="displayValue('/')">
+        <input type="button" value="=" onclick="evaluateOut()">
+        <br><br>
+        <input type="button" value="del" onclick="back()">
+
+        
+
+        
+        
+
+
+
+      </form>
+    
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
